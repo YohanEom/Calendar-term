@@ -1,10 +1,12 @@
 package com.mycompany.myapp.domain;
 
 import java.util.Calendar;
+import java.util.Date;
 
 public class Event {
     private Integer id;
     private Calendar when;
+    private Date date;
     private String summary;
     private String description;
     private CalendarUser owner;
@@ -14,6 +16,14 @@ public class Event {
     /* Updated by Assignment 3 - Start */
     public int getNumLikes() {
 		return numLikes;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
 	}
 
 	public void setNumLikes(int numLikes) {

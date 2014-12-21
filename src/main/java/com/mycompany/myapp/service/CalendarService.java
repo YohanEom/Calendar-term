@@ -32,6 +32,8 @@ public interface CalendarService {
     public void deleteAllEvents();
     
     /* EventAttendee */
+    public EventAttendee getEventAttendeeByEventIdAttendeeId(int eventId, int attendeeId);
+    
     public List<EventAttendee> getEventAttendeeByEventId(int eventId);
     
     public List<EventAttendee> getEventAttendeeByAttendeeId(int attendeeId);

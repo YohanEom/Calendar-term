@@ -18,7 +18,12 @@
 <div class="container">
 <jsp:include page="./includes/header.jsp"/>
     <c:if test="${message != null}">
-        <div class="alert alert-danger" id="message"><c:out value="${message}"/></div>
+        <div class="jumbotron">
+  <h1>MY CALENDAR!</h1>
+  <p>You can have the calendar only you.</p>
+  <p>you can create your event and check them, in the calendar</p>
+  <p><a class="btn btn-primary btn-lg" href="users/signup" role="button">JOIN US</a></p>
+</div>
     </c:if>
 	<ul>
 	    <li><a id="eventsLink" href="events/">모든 이벤트 보기</a> - 모든 유저들이 등록한 이벤트를 볼 수 있습니다.
